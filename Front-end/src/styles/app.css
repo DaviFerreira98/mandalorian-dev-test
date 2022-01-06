@@ -1,0 +1,107 @@
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  margin: 3rem auto 0;
+  box-shadow: 0 0px 5.3px rgba(0, 0, 0, 0.044),
+    0 0px 17.9px rgba(0, 0, 0, 0.066), 0 0px 80px rgba(0, 0, 0, 0.11);
+  border-radius: 1rem;
+  width: 280px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.add-task input {
+  border: 1px solid rgb(214, 214, 214);
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  padding: 6px;
+  outline: none;
+}
+
+.error-messages {
+  margin: 0 auto 1rem;
+  width: 100%;
+  color: rgb(218, 0, 0);
+}
+
+.task {
+  border-bottom: 1px solid rgb(197, 197, 197);
+  padding: 0.5rem 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-nome {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.task-completa > * {
+  opacity: 0.5;
+}
+
+.task-completa .task-completa-button {
+  background: rgb(196, 196, 196);
+}
+
+.task-completa-button {
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
+  background: none;
+}
+
+.task__controls {
+  display: flex;
+  flex-direction: column;
+}
+.task-delete-button {
+  border: none;
+  height: 1.2rem;
+  width: 1.2rem;
+  background: none;
+  padding: 0;
+}
